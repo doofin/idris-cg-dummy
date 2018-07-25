@@ -1,0 +1,8 @@
+package idris-dummy
+
+modules = Main
+
+executable = main
+
+main = Main
+

@@ -1,0 +1,67 @@
+SFun assert_unreachable [] 1 SNothing
+SFun call__IO [{arg_0},{arg_1},{arg_2}] 1 (SLet (Loc 3) SNothing (SApp True {APPLY_0} [Loc 2,Loc 3]))
+SFun idris_crash [] 1 SNothing
+SFun io_bind [{arg_0},{arg_1},{arg_2},{arg_3},{k_4},{w_5}] 1 (SLet (Loc 6) (SLet (Loc 6) (SApp False {APPLY_0} [Loc 3,Loc 5]) (SApp False {APPLY_0} [Loc 4,Loc 6])) (SApp True {APPLY_0} [Loc 6,Loc 5]))
+SFun io_pure [{arg_0},{arg_1},{arg_2},{w_3}] 1 (SV (Loc 2))
+
+SFun Main.main
+     [{in_0}]
+     2
+     (SLet
+     (Loc 1)
+     (SLet
+	(Loc 1)
+	(SLet (Loc 1) (SConst "hello\n") (SOp LWriteStr [Loc 0,Loc 1]))
+	(SCon Nothing 0 MkUnit [])
+	)
+     (SLet
+	(Loc 2)
+	(SLet (Loc 2) (SConst "world\n") (SOp LWriteStr [Loc 0,Loc 2]))
+	(SCon Nothing 0 MkUnit []))
+     )
+     
+SFun mkForeignPrim [] 1 SNothing
+SFun prim__asPtr [{arg_0}] 1 (SOp (LExternal prim__asPtr) [Loc 0])
+SFun prim__eqManagedPtr [{arg_0},{arg_1}] 1 (SOp (LExternal prim__eqManagedPtr) [Loc 0,Loc 1])
+SFun prim__eqPtr [{arg_0},{arg_1}] 1 (SOp (LExternal prim__eqPtr) [Loc 0,Loc 1])
+SFun prim__null [] 1 (SOp (LExternal prim__null) [])
+SFun prim__peek16 [{arg_0},{arg_1},{arg_2}] 1 (SOp (LExternal prim__peek16) [Loc 0,Loc 1,Loc 2])
+SFun prim__peek32 [{arg_0},{arg_1},{arg_2}] 1 (SOp (LExternal prim__peek32) [Loc 0,Loc 1,Loc 2])
+SFun prim__peek64 [{arg_0},{arg_1},{arg_2}] 1 (SOp (LExternal prim__peek64) [Loc 0,Loc 1,Loc 2])
+SFun prim__peek8 [{arg_0},{arg_1},{arg_2}] 1 (SOp (LExternal prim__peek8) [Loc 0,Loc 1,Loc 2])
+SFun prim__peekDouble [{arg_0},{arg_1},{arg_2}] 1 (SOp (LExternal prim__peekDouble) [Loc 0,Loc 1,Loc 2])
+SFun prim__peekPtr [{arg_0},{arg_1},{arg_2}] 1 (SOp (LExternal prim__peekPtr) [Loc 0,Loc 1,Loc 2])
+SFun prim__peekSingle [{arg_0},{arg_1},{arg_2}] 1 (SOp (LExternal prim__peekSingle) [Loc 0,Loc 1,Loc 2])
+SFun prim__poke16 [{arg_0},{arg_1},{arg_2},{arg_3}] 1 (SOp (LExternal prim__poke16) [Loc 0,Loc 1,Loc 2,Loc 3])
+SFun prim__poke32 [{arg_0},{arg_1},{arg_2},{arg_3}] 1 (SOp (LExternal prim__poke32) [Loc 0,Loc 1,Loc 2,Loc 3])
+SFun prim__poke64 [{arg_0},{arg_1},{arg_2},{arg_3}] 1 (SOp (LExternal prim__poke64) [Loc 0,Loc 1,Loc 2,Loc 3])
+SFun prim__poke8 [{arg_0},{arg_1},{arg_2},{arg_3}] 1 (SOp (LExternal prim__poke8) [Loc 0,Loc 1,Loc 2,Loc 3])
+SFun prim__pokeDouble [{arg_0},{arg_1},{arg_2},{arg_3}] 1 (SOp (LExternal prim__pokeDouble) [Loc 0,Loc 1,Loc 2,Loc 3])
+SFun prim__pokePtr [{arg_0},{arg_1},{arg_2},{arg_3}] 1 (SOp (LExternal prim__pokePtr) [Loc 0,Loc 1,Loc 2,Loc 3])
+SFun prim__pokeSingle [{arg_0},{arg_1},{arg_2},{arg_3}] 1 (SOp (LExternal prim__pokeSingle) [Loc 0,Loc 1,Loc 2,Loc 3])
+SFun prim__ptrOffset [{arg_0},{arg_1}] 1 (SOp (LExternal prim__ptrOffset) [Loc 0,Loc 1])
+SFun prim__readChars [{arg_0},{arg_1},{arg_2}] 1 (SOp (LExternal prim__readChars) [Loc 0,Loc 1,Loc 2])
+SFun prim__readFile [{arg_0},{arg_1}] 1 (SOp (LExternal prim__readFile) [Loc 0,Loc 1])
+SFun prim__registerPtr [{arg_0},{arg_1}] 1 (SOp (LExternal prim__registerPtr) [Loc 0,Loc 1])
+SFun prim__sizeofPtr [] 1 (SOp (LExternal prim__sizeofPtr) [])
+SFun prim__stderr [] 1 (SOp (LExternal prim__stderr) [])
+SFun prim__stdin [] 1 (SOp (LExternal prim__stdin) [])
+SFun prim__stdout [] 1 (SOp (LExternal prim__stdout) [])
+SFun prim__vm [{arg_0}] 1 (SOp (LExternal prim__vm) [Loc 0])
+SFun prim__writeFile [{arg_0},{arg_1},{arg_2}] 1 (SOp (LExternal prim__writeFile) [Loc 0,Loc 1,Loc 2])
+SFun prim__writeString [{arg_0},{arg_1}] 1 (SOp LWriteStr [Loc 0,Loc 1])
+SFun prim_io_bind [{arg_0},{arg_1},{arg_2},{arg_3}] 1 (SApp True {APPLY_0} [Loc 3,Loc 2])
+SFun run__IO [{arg_0},{arg_1}] 1 (SLet (Loc 2) SNothing (SApp True {APPLY_0} [Loc 1,Loc 2]))
+SFun unsafePerformPrimIO [] 1 SNothing
+SFun world [{arg_0}] 1 (SV (Loc 0))
+SFun {APPLY_0} [{fn_0},{arg_0}] 1 SNothing
+SFun {APPLY2_0} [{fn_0},{arg0_0},{arg1_0}] 1 SNothing
+SFun {EVAL_0} [{arg_0}] 1 (SChkCase (Loc 0) [SDefaultCase (SV (Loc 0))])
+SFun {runMain_0} [] 1 (SLet (Loc 0) (SLet (Loc 0) SNothing (SApp False Main.main [Loc 0])) (SApp True {EVAL_0} [Loc 0]))
+SFun Decidable.Equality.Decidable.Equality.Char implementation of Decidable.Equality.DecEq, method decEq, primitiveNotEq [] 1 SNothing
+SFun Decidable.Equality.Decidable.Equality.Int implementation of Decidable.Equality.DecEq, method decEq, primitiveNotEq [] 1 SNothing
+SFun Decidable.Equality.Decidable.Equality.Integer implementation of Decidable.Equality.DecEq, method decEq, primitiveNotEq [] 1 SNothing
+SFun Decidable.Equality.Decidable.Equality.ManagedPtr implementation of Decidable.Equality.DecEq, method decEq, primitiveNotEq [] 1 SNothing
+SFun Decidable.Equality.Decidable.Equality.Ptr implementation of Decidable.Equality.DecEq, method decEq, primitiveNotEq [] 1 SNothing
+SFun Decidable.Equality.Decidable.Equality.String implementation of Decidable.Equality.DecEq, method decEq, primitiveNotEq [] 1 SNothing
+SFun case block in io_bind at IO.idr:108:34-36 [{arg_0},{arg_1},{arg_2},{arg_3},{arg_4},{arg_5},{arg_6},{arg_7}] 1 (SApp True {APPLY_0} [Loc 7,Loc 5])
